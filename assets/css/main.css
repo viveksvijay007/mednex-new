@@ -7181,3 +7181,660 @@ section,
   color: var(--contrast-color);
   transform: translateY(-2px);
 }
+/*--------------------------------------------------------------
+# Instructor Profile Section
+--------------------------------------------------------------*/
+.instructor-profile .instructor-hero-banner {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--accent-color), var(--heading-color));
+  margin-bottom: 40px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.instructor-profile .instructor-hero-banner .hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor-profile .instructor-hero-banner .hero-background .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 20%) 0%, color-mix(in srgb, var(--accent-color), transparent 30%) 100%);
+}
+
+.instructor-profile .instructor-hero-banner .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 6px solid var(--contrast-color);
+  object-fit: cover;
+  box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-avatar .status-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--contrast-color);
+  color: var(--accent-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 5px 15px color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-avatar .status-badge i {
+  font-size: 14px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info {
+  color: var(--contrast-color);
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info h2 {
+  color: var(--contrast-color);
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .credentials {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .credentials .credential {
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 80%);
+  color: var(--contrast-color);
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .rating-overview {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .rating-overview .stars i {
+  color: #ffc107;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .rating-overview .rating-text {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions .btn-contact {
+  background-color: var(--contrast-color);
+  color: var(--accent-color);
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions .btn-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px color-mix(in srgb, var(--default-color), transparent 70%);
+  color: var(--accent-color);
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions .social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions .social-media a {
+  width: 45px;
+  height: 45px;
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 80%);
+  color: var(--contrast-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions .social-media a:hover {
+  background-color: var(--contrast-color);
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.instructor-profile .content-tabs .custom-tabs {
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  padding: 8px;
+  border: none;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.instructor-profile .content-tabs .custom-tabs .nav-item .nav-link {
+  border: none;
+  border-radius: 10px;
+  color: var(--default-color);
+  font-weight: 500;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+}
+
+.instructor-profile .content-tabs .custom-tabs .nav-item .nav-link i {
+  font-size: 16px;
+}
+
+.instructor-profile .content-tabs .custom-tabs .nav-item .nav-link.active {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.instructor-profile .content-tabs .custom-tabs .nav-item .nav-link:hover:not(.active) {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+}
+
+.instructor-profile .content-tabs .custom-tab-content {
+  padding: 40px 0;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .bio-section {
+  margin-bottom: 40px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .bio-section h4 {
+  color: var(--heading-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .bio-section p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .expertise-grid h4 {
+  color: var(--heading-color);
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .expertise-grid .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .expertise-grid .skills-grid .skill-item {
+  background-color: var(--surface-color);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .expertise-grid .skills-grid .skill-item i {
+  font-size: 32px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .expertise-grid .skills-grid .skill-item span {
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.instructor-profile .content-tabs .custom-tab-content .about-content .expertise-grid .skills-grid .skill-item:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+.instructor-profile .content-tabs .custom-tab-content .experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .experience-grid .experience-card {
+  display: flex;
+  gap: 30px;
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 5px solid var(--accent-color);
+}
+
+.instructor-profile .content-tabs .custom-tab-content .experience-grid .experience-card .timeline-marker {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .experience-grid .experience-card .experience-details h5 {
+  color: var(--heading-color);
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .experience-grid .experience-card .experience-details .institution {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .experience-grid .experience-card .experience-details p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item {
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+  transition: all 0.3s ease;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-thumb {
+  position: relative;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-thumb img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-thumb .course-level {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-info {
+  padding: 25px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-info h5 {
+  color: var(--heading-color);
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-info .course-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-info .course-stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-info .course-stats span i {
+  color: var(--accent-color);
+}
+
+.instructor-profile .content-tabs .custom-tab-content .courses-grid .course-item .course-info .price {
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container .review-card {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container .review-card .review-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container .review-card .review-header .reviewer-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container .review-card .review-header .reviewer-info h6 {
+  color: var(--heading-color);
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container .review-card .review-header .reviewer-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container .review-card .review-header .reviewer-info .review-rating i {
+  color: #ffc107;
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+.instructor-profile .content-tabs .custom-tab-content .reviews-container .review-card p {
+  line-height: 1.7;
+  margin: 0;
+  font-style: italic;
+}
+
+.instructor-profile .sidebar-widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.instructor-profile .sidebar-widgets .stats-widget,
+.instructor-profile .sidebar-widgets .achievements-widget,
+.instructor-profile .sidebar-widgets .contact-widget {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.instructor-profile .sidebar-widgets .stats-widget h4,
+.instructor-profile .sidebar-widgets .achievements-widget h4,
+.instructor-profile .sidebar-widgets .contact-widget h4 {
+  color: var(--heading-color);
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.instructor-profile .sidebar-widgets .stats-widget .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.instructor-profile .sidebar-widgets .stats-widget .stats-grid .stat-box {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  transition: all 0.3s ease;
+}
+
+.instructor-profile .sidebar-widgets .stats-widget .stats-grid .stat-box:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.instructor-profile .sidebar-widgets .stats-widget .stats-grid .stat-box .stat-icon {
+  width: 50px;
+  height: 50px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.instructor-profile .sidebar-widgets .stats-widget .stats-grid .stat-box .stat-icon i {
+  font-size: 20px;
+}
+
+.instructor-profile .sidebar-widgets .stats-widget .stats-grid .stat-box .stat-content h5 {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.instructor-profile .sidebar-widgets .stats-widget .stats-grid .stat-box .stat-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 14px;
+  margin: 0;
+}
+
+.instructor-profile .sidebar-widgets .achievements-widget .achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.instructor-profile .sidebar-widgets .achievements-widget .achievement-list .achievement-item {
+  display: flex;
+  gap: 15px;
+}
+
+.instructor-profile .sidebar-widgets .achievements-widget .achievement-list .achievement-item i {
+  width: 40px;
+  height: 40px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.instructor-profile .sidebar-widgets .achievements-widget .achievement-list .achievement-item .achievement-text h6 {
+  color: var(--heading-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.instructor-profile .sidebar-widgets .achievements-widget .achievement-list .achievement-item .achievement-text p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 14px;
+  margin: 0;
+}
+
+.instructor-profile .sidebar-widgets .contact-widget .contact-info {
+  margin-bottom: 25px;
+}
+
+.instructor-profile .sidebar-widgets .contact-widget .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.instructor-profile .sidebar-widgets .contact-widget .contact-info .contact-item i {
+  width: 35px;
+  height: 35px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.instructor-profile .sidebar-widgets .contact-widget .contact-info .contact-item span {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.instructor-profile .sidebar-widgets .contact-widget .office-hours {
+  padding: 20px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.instructor-profile .sidebar-widgets .contact-widget .office-hours h6 {
+  color: var(--heading-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.instructor-profile .sidebar-widgets .contact-widget .office-hours p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .instructor-profile .instructor-hero-banner .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .instructor-profile .instructor-hero-banner .hero-content .instructor-info .credentials {
+    justify-content: center;
+  }
+
+  .instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions {
+    justify-content: center;
+  }
+
+  .instructor-profile .sidebar-widgets {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .instructor-profile .instructor-hero-banner .hero-content {
+    padding: 40px 20px;
+  }
+
+  .instructor-profile .instructor-hero-banner .hero-content .instructor-avatar img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .instructor-profile .instructor-hero-banner .hero-content .instructor-info h2 {
+    font-size: 32px;
+  }
+
+  .instructor-profile .instructor-hero-banner .hero-content .instructor-info .credentials {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .instructor-profile .instructor-hero-banner .hero-content .instructor-info .contact-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .instructor-profile .custom-tabs .nav-item .nav-link {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .instructor-profile .stats-widget .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
